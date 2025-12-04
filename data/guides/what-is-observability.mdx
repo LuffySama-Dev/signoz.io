@@ -67,12 +67,12 @@ To achieve this visibility, observability relies on three primary types of telem
    - **Example:** `2025-12-02 14:00:01 ERROR Connection failed to DB-1`
    - **Purpose:** Providing specific context and error details.
 
-   This is how logs typically appear when viewed in a standard logging dashboard. You can click on a log line and explore it’s attributes and body text.
+   This is how logs typically appear when viewed in a standard logging dashboard. You can click on a log line and explore its attributes and body text.
 
    <Figure
      src="/img/guides/2025/12/logs_what_is_observability.webp"
-     alt="SigNoz’s log management module showing a detailed view of a log along with it’s attributes."
-     caption="SigNoz’s log management module showing a detailed view of a log along with it’s attributes."
+     alt="SigNoz’s log management module showing a detailed view of a log along with its attributes."
+     caption="SigNoz’s log management module showing a detailed view of a log along with its attributes."
    />
 
 3. **Traces:** The journey of a single request as it hops between services.
@@ -88,10 +88,13 @@ To achieve this visibility, observability relies on three primary types of telem
      caption="Example trace showing the journey of a request."
    />
 
-   <KeyPointCallout title=”Are these three pillars enough ?” defaultCollapsed=”true”>
-
-   Observability is often explained using the “Three Pillars” model, but the goal is not to manage these signals separately. Unified observability platforms, especially those built on OpenTelemetry, treat metrics, logs, and traces as interconnected telemetry that shares context. This correlation is what enables true end-to-end debugging. Read more about this in our blog on “[**Not 3 pillars but a single whole to help customers solve issues faster**](https://signoz.io/blog/observability-net/)”.
-
+   <KeyPointCallout title="Are these three pillars enough?" defaultCollapsed="true">
+     Observability is often explained using the “Three Pillars” model, but the goal is not to manage
+     these signals separately. Unified observability platforms, especially those built on
+     OpenTelemetry, treat metrics, logs, and traces as interconnected telemetry that shares context.
+     This correlation is what enables true end-to-end debugging. Read more about this in our blog on
+     “[**Not 3 pillars but a single whole to help customers solve issues
+     faster**](https://signoz.io/blog/observability-net/)”.
    </KeyPointCallout>
 
 Even though observability has become a necessity of modern software architecture, there is still one big misconception around it. Let’s take a look at it now.
